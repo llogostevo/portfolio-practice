@@ -1,0 +1,435 @@
+/* FONT STYLES USED
+font-family: 'Inter', sans-serif;
+font-family: 'League Spartan', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: #FFF8F0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    color: #55206D;
+    padding: 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* FONT STYLING WHOLE PAGE */
+h1 {
+    font-family: "League Spartan", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #190D37;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+h1 span {
+    font-family: "League Spartan", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 50px;
+
+}
+
+
+/* Section tags are not headings but tag lines to support the blue heading above, so semantically are regulary paragraphs */
+.section-tag {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+/* description below the tag line for a section */
+.section-intro {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #190D37;
+    margin-top: 0;
+    margin-bottom: 48px;
+}
+
+/* links only provided under project descriptions */
+a {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    /* design weight 500, reduced as looks thicker on webpage than design */
+    font-weight: 300;
+    line-height: 17px;
+    text-decoration: none;
+    color: #6A87A3;
+    padding-top: 8px;
+    display: block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* remove all margin and borders from any paragraph */
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #2858FF;
+    margin-top: 96px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #291854;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+/* Big text description from hero */
+.bigtext {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #331E6A;
+}
+
+/* GRID LAYOUT HERO */
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 190px 530px 530px 190px;
+    margin: 0 auto;
+}
+
+/* Left Layout */
+.hero-details {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 33px 20px 33px 20px;
+    grid-template-rows: 66px 29px 180px 148px 64px;
+}
+
+/* Right layout */
+#hero img {
+    grid-column: 3 / 5;
+    border-bottom-right-radius: 200px;
+    margin-left: 10px;
+}
+
+/* HERO IMAGE (right layout) */
+
+/* Background-Elipse Under Hero Image*/
+
+#background-elipse {
+    position: absolute;
+    width: 22.7825rem;
+    height: 18.75rem;
+    background: #DC93FF;
+    filter: blur(125px);
+    transform: rotate(133.77deg);
+    z-index: -1;
+
+}
+
+/* HERO DETAILS CONTENT (left layout) */
+
+/* apply following left layout elements across container */
+#intro,
+#job-title,
+#about-me,
+#contact-button {
+    grid-column: 1 / 3;
+}
+
+#job-title h1 {
+    position: relative;
+}
+
+#job-title svg {
+    width: 225px;
+    height: 39px;
+    transform: translate(0px, -25px);
+    z-index: -1;
+    position: relative;
+}
+
+#email-block {
+    display: flex;
+    justify-content: right;
+    
+
+}
+
+#phone-block {
+    display: flex;
+    justify-content: left;
+}
+
+#phone {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #000000;
+    margin: 0px 0px 0px 6px;
+    padding:0;
+}
+
+#email {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #000000;
+    margin: 0px 0px 0px 6px;
+    padding:0;
+}
+
+
+
+#phone-block svg {
+    height: 16px;
+    width: 16px;
+}
+
+#email-block svg {
+    height: 16px;
+    width: 16px;
+}
+
+/* Intro  */
+#intro {
+    display: flex;
+    justify-content: left;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #291854;
+
+}
+
+/* about me text */
+#about-me {
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+#contact-button button {
+    height: 44px;
+    width: 138px;
+    border-radius: 4px;
+    border: none;
+    background-color: #2F2F2F;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+button {
+    padding: 0;
+}
+
+/* roll over to change colour of button to be lighter */
+#contact-button button:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+}
+
+/* My Projects */
+
+.blue-pn {
+    background-color: #19ACFF;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+.yellow-pn {
+    background-color: #FFE819;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+.red-pn {
+    background-color: #FF1919;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+.square {
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.pn-text {
+    margin-left: 20px;
+}
+
+.square p {
+    text-align: center;
+    padding: 44px;
+}
+
+/* What I Do Layout */
+#what-i-do-layout {
+    display: grid;
+    grid-template-columns: 190px 351px 361px 351px 190px;
+    margin: 0 auto;
+}
+
+.what-i-do-text-rows {
+    grid-column: 2 / 5;
+    text-align: center;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+
+.what-i-do-card-layout {
+    /* position of card group */
+    grid-column: 2 / 5;
+    /* inner layout */
+    display: grid;
+    grid-template-columns: 351px 361px 351px;
+    text-align: center;
+}
+
+.card-text {
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.what-i-do-card-layout h3 {
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 20px;
+}
+
+.what-i-do-card {
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 340px;
+}
+
+#card-left {
+    justify-self: start;
+}
+
+#card-right {
+    justify-self: end;
+}
+
+#card-center {
+    justify-self: center;
+}
+
+/* Project Layout */
+#projects {
+    display: grid;
+    grid-template-columns: 190px 530px 530px 190px;
+    margin: 0 auto;
+}
+
+.projects-text-rows {
+    grid-column: 2 / 4;
+    text-align: center;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+
+.pn-layout {
+    display: grid;
+    grid-column: 2 / 4;
+    grid-template-columns: 160px 900px;
+}
+
+
+/* BACKGROUND FEATURES */
+#blue-blob {
+    position: absolute;
+    left: 1027px;
+    top: 823px;
+    z-index: -1;
+}
+
+#red-blob {
+    position: absolute;
+    top: 1018px;
+    left: 78px;
+    z-index: -1;
+}
+
+#yellow-glow {
+    position: absolute;
+    top: 1131px;
+    left: 0px;
+    z-index: -1;
+}
+
+#green-glow {
+    position: absolute;
+    top: 1408px;
+    right: 0px;
+    z-index: -1;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #000000;
+    height: 58px;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin: 0 auto;
+    padding: 20px 0;
+}
