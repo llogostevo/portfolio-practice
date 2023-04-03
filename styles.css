@@ -410,8 +410,8 @@ button {
 
 #green-glow {
     position: absolute;
-    top: 1408px;
-    right: 0px;
+    top: 1208px;
+    left: 1140px;
     z-index: -1;
 }
 
@@ -421,15 +421,15 @@ button {
 footer {
     background-color: #000000;
     height: 58px;
+    width: 1440px;
 }
 
 footer p {
-    text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
     color: #FFFFFF;
-    margin: 0 auto;
+    margin: 602px;
     padding: 20px 0;
 }
