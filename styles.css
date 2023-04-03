@@ -422,6 +422,8 @@ footer {
     background-color: #000000;
     height: 58px;
     width: 1440px;
+    margin-top: 127px;
+
 }
 
 footer p {
@@ -430,6 +432,6 @@ footer p {
     font-weight: 500;
     line-height: 18px;
     color: #FFFFFF;
-    margin: 602px;
+    margin-left: 602px;
     padding: 20px 0;
 }
